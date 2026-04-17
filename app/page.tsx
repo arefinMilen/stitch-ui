@@ -3,6 +3,7 @@ import Nav from "./component/Nav";
 import Hero from "./component/Hero";
 import Feature from "./component/Feature"; 
 import PopularComponents from "./component/PopularComponents"; 
+import Banner from "./component/Banner";
 export default function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Feature />
       <PopularComponents />
+      <Banner />
     </>
   );
 }
