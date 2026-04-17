@@ -96,7 +96,7 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`w-full border-b transition-colors duration-300 ${theme.nav}`}
+      className={`w-full border-b transition-colors  duration-300 sticky z-50 top-0  ${theme.nav}`}
       initial={{ y: -56, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
