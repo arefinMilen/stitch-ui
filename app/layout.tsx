@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/app/component/providers/LenisProvider";
+import {ThemeProvider} from "@/app/component/providers/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,12 +27,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}suppressHydrationWarning
-    >
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}suppressHydrationWarning>
       <body className="min-h-full flex flex-col">
-        <LenisProvider>
-          {children}
-        </LenisProvider>
+        <ThemeProvider>
+          <LenisProvider>
+            {children}
+          </LenisProvider>
+        </ThemeProvider>  
       </body>
     </html>
   );

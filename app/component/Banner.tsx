@@ -16,7 +16,7 @@ export default function CTABanner() {
         animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="
-          relative max-w-7xl mx-auto overflow-hidden
+          relative max-w-5xl mx-auto overflow-hidden
           rounded-2xl md:rounded-3xl
           bg-[#2563eb]
           px-6 py-14 sm:py-16 md:py-20

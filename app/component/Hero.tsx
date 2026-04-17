@@ -87,7 +87,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 w-full max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-0">
+      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-0">
         {/* ════════════════ LEFT COLUMN ════════════════ */}
         <div className="flex-1 flex flex-col items-start gap-5">
           {/* Badge
