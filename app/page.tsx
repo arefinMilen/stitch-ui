@@ -4,6 +4,7 @@ import Hero from "./component/Hero";
 import Feature from "./component/Feature"; 
 import PopularComponents from "./component/PopularComponents"; 
 import Banner from "./component/Banner";
+import Footer from "./component/Footer";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <Feature />
       <PopularComponents />
       <Banner />
+      <Footer />
     </>
   );
 }
